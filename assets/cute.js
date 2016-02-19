@@ -13,7 +13,7 @@ function get_cat() {
     } else if(randomFoldNum == 5) {
     	randomNumber = Math.floor(Math.random()*89) + 1;
     }
-    document.body.innerHTML += "<div id='cats'><h1>CLICK IMAGE FOR REFRESH</h1><img onclick='reload_cat();' src='" + randomFoldNum + "/" + randomNumber + ".jpg' /></div>";
+    document.body.innerHTML += "<div id='cats'><h3>CLICK IMAGE FOR A NEW CAT</h3><img onclick='reload_cat();' src='" + randomFoldNum + "/" + randomNumber + ".jpg' /></div>";
 }
 
 function reload_cat() {
@@ -31,5 +31,5 @@ function reload_cat() {
     } else if(randomFoldNum == 5) {
     	randomNumber = Math.floor(Math.random()*89) + 1;
     }
-    document.getElementById('cats').innerHTML = "<h1>CLICK IMAGE FOR REFRESH</h1><img onclick='reload_cat();' src='" + randomFoldNum + "/" + randomNumber + ".jpg' />";
+    document.getElementById('cats').innerHTML = "<h3>CLICK IMAGE FOR A NEW CAT</h3><img onclick='reload_cat();' src='" + randomFoldNum + "/" + randomNumber + ".jpg' />";
 }
